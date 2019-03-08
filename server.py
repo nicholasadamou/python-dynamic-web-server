@@ -244,7 +244,7 @@ class Server:
                 data[key] = value
 
             # Show the contents of the data dictionary
-            print("DATA: %s" % data)
+            print("[!] DATA: %s" % data)
 
             # Craft the html reply to the client
             html = Server.forge(file_name, data)
