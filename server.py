@@ -81,7 +81,8 @@ class Server:
                         # Append this client socket to the socket's list
                         if client_socket not in self.sockets:
                             self.sockets.append(client_socket)
-
+                        
+                        # Append this client socket to the client's dictionary
                         if client_socket not in self.clients.keys():
                             self.clients[client_socket] = HTTPRequest()
                     else:
