@@ -78,7 +78,7 @@ class Server:
                         # Acknowledge that an NEW client has connected
                         print("[+] 🖥️ ('%s', %s): has connected" % (address[0], address[1]))
 
-                        # Append this client to the client list
+                        # Append this client socket to the socket's list
                         if client_socket not in self.sockets:
                             self.sockets.append(client_socket)
 
