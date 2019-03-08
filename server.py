@@ -88,9 +88,9 @@ class Server:
                         # ABLE to RECEIVE
 
                         # Obtain the address used by the client
-                        address = r.gethostname()
+                        address = r.getsockname()[0]
                         # Obtain the port used by the client
-                        port = r.gethostname()[1]
+                        port = r.getsockname()[1]
 
                         # The client's (address, port) tuple
                         client = (address, port)
