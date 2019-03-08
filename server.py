@@ -120,6 +120,9 @@ class Server:
 
             # Remove this client from the list of concurrently connected clients
             self.sockets.remove(client_socket)
+            
+            # Remove this client from the client dictionary
+            del self.clients[client_socket]
 
             # Close the client connection
             client_socket.close()
